@@ -1,0 +1,210 @@
+.mb-10 {
+margin: 10px 0;
+}
+.offer-div {
+background: rgba(244, 244, 244, 0.33);
+}
+
+/*----------------------------------------*/
+/* 6  pos_new_product
+/*----------------------------------------*/
+.section-title h2{
+color: #101010;
+display: inline-block;
+font-size: 24px;
+font-weight: 900;
+letter-spacing: 0.03em;
+line-height: 1;
+padding-bottom: 15px;
+position: relative;
+text-transform: uppercase;
+}
+.section-title h2:before{
+background: #f0ce16 none repeat scroll 0 0;
+bottom: -2px;
+content: "";
+height: 2px;
+left: 0;
+position: absolute;
+width: 90px;
+}
+.section-title h2 span{
+color: #f0ce16;
+font-size: 36px;
+}
+.single-product{
+overflow:hidden;
+position:relative;
+padding:15px;
+transition:.5s;
+background:#fff;
+}
+.single-product::before {
+background-color: #f2f2f2;
+content: "";
+height: 83%;
+position: absolute;
+right: 0;
+top: 0;
+width: 1px;
+z-index: 999;
+}
+.single-product:hover{
+box-shadow: 0 0 9.6px 0.4px rgba(0, 0, 0, 0.1);
+transition: .5s;
+z-index: 2;
+}
+.product-img{
+overflow:hidden;
+position:relative;
+}
+.product-img a img{
+width:100%;
+}
+.product-img a img.second{
+bottom: 0;
+display: inline-block;
+left: 0;
+opacity: 0;
+position: absolute;
+right: 0;
+top: 0;
+transform: translateZ(-1000px) rotateY(-90deg);
+visibility: hidden;
+transition:.5s;
+}
+.single-product:hover .product-img a img.second{
+opacity: 1;
+transform: translateZ(0px) rotateY(0deg);
+visibility: visible;
+}
+.product-content{
+padding: 15px 0;
+}
+.product-content h3{
+margin-bottom: 0;
+}
+.product-content h3 a{
+color: #393939;
+display: block;
+font-size: 15px;
+font-weight: 700;
+line-height: 20px;
+margin-bottom: 15px;
+text-transform: capitalize;
+text-decoration:none;
+transition:.3s;
+}
+.product-content h3 a:hover{
+color:#f0ce16;
+}
+.product-rating a{
+color:#f0ce16;
+font-size: 13px;
+}
+.product-rating.color a{
+color:#CCCCCC;
+}
+.product-price ul li{
+display:inline-block;
+}
+.product-price ul li.new-price{
+color: #101010;
+font-size: 18px;
+font-weight: 700;
+}
+.product-price ul li.new-price.sale{
+color:#e91113;
+}
+.product-price ul li.old-price{
+color: #5c5c5c;
+font-size: 14px;
+margin: 0 5px;
+text-decoration: line-through;
+}
+.add-to-links ul li{
+display:inline-block;
+float: left;
+margin-right: 10px;
+opacity:0;
+}
+.single-product:hover .add-to-links ul li{
+opacity:1;
+}
+.add-to-links ul li a{
+background: #101010 none repeat scroll 0 0;
+border: 0 none;
+border-radius: 100%;
+color: #fff;
+display: inline-block;
+font-size: 16px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+width: 40px;
+transition:.3s;
+}
+.add-to-links ul li a:hover{
+background-color: #f0ce16;
+}
+.single-product:hover .add-to-links ul li:nth-of-type(1){
+animation: 500ms ease-in-out 0s normal none 1 running zoomIn;
+}
+.single-product:hover .add-to-links ul li:nth-of-type(2){
+animation: 700ms ease-in-out 0s normal none 1 running zoomIn;
+}
+.single-product:hover .add-to-links ul li:nth-of-type(3){
+animation: 900ms ease-in-out 0s normal none 1 running zoomIn;
+}
+.single-product:hover .add-to-links ul li:last-child{
+animation: 1100ms ease-in-out 0s normal none 1 running zoomIn;
+}
+.product-active.owl-carousel.owl-theme .owl-controls .owl-nav div,.product-active-3.owl-carousel.owl-theme .owl-controls .owl-nav div,.product-active-7.owl-carousel.owl-theme .owl-controls .owl-nav div,.tab-active.owl-carousel.owl-theme .owl-controls .owl-nav div,.blog-active.owl-carousel.owl-theme .owl-controls .owl-nav div,.brand-active.owl-carousel.owl-theme .owl-controls .owl-nav div{
+background: #cccccc none repeat scroll 0 0;
+border-radius: 100%;
+color: #fff;
+display: inline-block;
+font-size: 18px;
+height: 48px;
+line-height: 48px;
+opacity: 0;
+position: absolute;
+text-align: center;
+top: 50%;
+transform:translateY(-50%);
+transition: .5s;
+width: 48px;
+z-index: 1;
+left:0;
+}
+.product-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div,.product-active-3:hover.owl-carousel.owl-theme .owl-controls .owl-nav div,.product-active-7:hover.owl-carousel.owl-theme .owl-controls .owl-nav div,.tab-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div,.blog-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div,.brand-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div{
+opacity:1;
+}
+.product-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev,.product-active-3:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev,.product-active-7:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev,.blog-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev,.brand-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev{
+left: -15px;
+}
+.product-active.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.product-active-3.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.product-active-7.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.tab-active.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.blog-active.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.brand-active.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next{
+right: 0;
+left:auto;
+}
+.product-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.product-active-3:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.product-active-7:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.blog-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next,.brand-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next{
+right: -15px;
+}
+.product-active.owl-carousel.owl-theme .owl-controls .owl-nav div:hover,.product-active-3.owl-carousel.owl-theme .owl-controls .owl-nav div:hover,.tab-active.owl-carousel.owl-theme .owl-controls .owl-nav div:hover,.blog-active.owl-carousel.owl-theme .owl-controls .owl-nav div:hover,.brand-active.owl-carousel.owl-theme .owl-controls .owl-nav div:hover{
+background: #f0ce16 none repeat scroll 0 0;
+color: #fff;
+transition: .3s;
+}
+.tab-active.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next{
+right: 5px;
+left:auto;
+}
+.tab-active.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev{
+left: 5px;
+}
+.tab-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev{
+left: 0px;
+}
+.tab-active:hover.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next{
+right: 0px;
+}
